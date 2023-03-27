@@ -5,6 +5,16 @@ from tkinter import *
 
 root =  Tk()
 class funcs():
+        def current_time():
+        string = strftime('%H:%M:%S %p')
+        lbl.config(text=string)
+        lbl.after(1000, time)
+        lbl = Label(root, font=('calibri', 40, 'bold'),
+                    background='black',
+                    foreground='white')
+
+        # of the tkinter window
+    lbl.pack(anchor='center')
     def timer():
         length = 10
         while True:
@@ -24,5 +34,5 @@ class funcs():
         
 Button(text="Timer(10 Seconds long)", command=lambda: [funcs.timer()]).pack()
 Button(text="Stopwatch(No Exit or pause function)", command= lambda:[funcs.stopwatch()]).pack()
-
+current_time()
 root.mainloop()
