@@ -5,6 +5,9 @@ from tkinter import *
 
 # create tkinter application 
 root =  Tk()
+root.resizable(0, 0)
+root.title("Clock")
+root.configure(bg="red")
 class funcs():
     #define functions 
     def timer():
