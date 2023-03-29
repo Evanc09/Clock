@@ -18,7 +18,7 @@ class funcs():
             length = length -1
             print(f"Time left: {length} seconds")
             if length == 0:
-                print("Time's up#")
+                print("Time's up")
                 break
     def stopwatch():
         #stopwatch (runs infinitely)
